@@ -1,0 +1,26 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "serve": "webpack server --mode=production",
+    "serve-dev": "webpack server --mode=development"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.7.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.71.0"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "sass": "^1.49.11",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
