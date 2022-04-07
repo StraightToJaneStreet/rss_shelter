@@ -1,0 +1,53 @@
+.contacts {
+    background: url("/assets/image/footer-puppy.png") no-repeat right 40px bottom,
+                url("/assets/image/background-tile.png"),
+                radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) ,#211F20;
+    &__content {
+        padding: 41px 0 40px 0;
+        display: flex;
+        gap: 159px;
+    }
+
+    &__suggestions {
+        padding: 16px 0 0 0;
+        max-width: 280px;
+    }
+
+    &__visit {
+        padding: 16px 0 0 0;
+        max-width: 370px;
+
+    }
+    &__title {
+        @extend %typography-h3;
+        color: $color-light-xl;
+        margin: 0 0 40px 0;
+        &--visit {
+            max-width: 270px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__item {
+        @extend %typography-h4;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 20px;
+        }
+        span {
+            display: inline-block;
+            color: $color-primary;
+            font-family: 'Georgia';
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 115%;
+        }
+        &--location1 {
+            margin-bottom: 32px;
+        }
+        &--email {
+            margin-bottom: 44px;
+        }
+    }
+}

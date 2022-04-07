@@ -1,0 +1,59 @@
+.donation {
+    background-color: $color-light-l;
+    &__content {
+        padding: 80px 0 101px 0;        
+        max-width: 915px;
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            display: block;
+        }
+    }
+    &__title {
+        @extend %typography-h3;
+        color: $color-dark-l;
+        max-width: 300px;
+        margin: 0 0 20px 0;
+    }
+    &__text {
+        @extend %typography-h5;
+        color: $color-dark-l;
+        margin: 0 0 18px 0;
+    }
+    &__button {
+        display: block;
+        @extend %typography-h4;
+        background-color: $color-primary;
+        color: $color-dark-l;
+        border-radius: 9px;
+        padding: 10px 15px;
+        vertical-align: center;
+        text-decoration: none;
+
+        margin: 0 0 20px 0;
+        img {
+            vertical-align: middle;
+        }
+
+        span {
+            margin-left: 15px;
+            vertical-align: middle;
+        }
+
+        &:hover {
+            background-color: unset;
+        }
+    }
+
+    &__legal {
+        @extend %typography-paragraph-s;
+        color: $color-dark-m;
+        margin-bottom: 0;
+    }
+}
