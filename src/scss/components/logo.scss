@@ -1,5 +1,5 @@
 .logo {
-
+    text-decoration: none;
     &__title {
         @extend %typography-logo-title;
         color: $color-primary;
