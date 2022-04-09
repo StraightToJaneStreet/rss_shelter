@@ -37,7 +37,11 @@
     &--dark &__link {
         color: $color-dark-l;
         &:hover {
-            color: $color-dark-xl;
+            color: $color-dark-3xl;
         }
     }
+    &--dark &__item--current &__link{
+        color: $color-dark-3xl;
+    }
+
 }
