@@ -1,141 +1,17 @@
-.button {
-    $color: $color-primary;
-
-    box-sizing: border-box;
-    display: inline-block;
-    color: $color-dark-3xl;
-    background-color: $color;
-    border: 2px solid $color;
-
-    @extend %typography-button;
-
-    padding: 13px 43px;
-
-    border-radius: 100px;
-    text-decoration: none;
-
-    &:hover {
-        $color: $color-primary-light;
-        background-color: white;
-    }
-
-    &--inverted {
-        background-color: unset;
-        &:hover {
-            background-color: $color;
-        }
+@import "button";
+@import "slider";
+@import "logo";
+@import "pet-card";
+@import "navigation";
+@import "pagination";
+.catalog {
+    padding: 15px 0 0 0;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px 40px;
+        margin-bottom: 60px;
     }
 
 }
 
-.logo {
-    &__title {
-        @extend %typography-logo-title;
-        color: $color-primary;
-        margin: 0 0 10px 0;
-        padding: 0;
-        position: relative;
-    }
-    &__subtitle {
-        @extend %typography-logo-subtitle;
-        color: $color-light-xl;
-        text-align: right;
-        margin: 0 1px 0 0;
-        padding: 0;
-    }
-    &--dark &__title {
-        color: $color-dark-l;
-    }
-    &--dark &__subtitle {
-        color: $color-dark-xl;
-    }
-}
-
-.section {
-    box-sizing: border-box;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 40px;
-}
-
-.navigation {
-    display: flex;
-
-    &__item {
-
-        list-style-type: none;
-
-        margin: 0 35.7px 0 0;
-
-        &:last-child {
-            margin-right: 0; 
-        }
-    }
-
-    &__link {
-        @extend %typography-paragraph-l;
-        color: $color-dark-s;
-        text-decoration: none;
-        text-decoration-line: 2px solid;
-        &:hover {
-            color: $color-light-s;
-            &:after {
-                display: block;
-                content: "";
-                height: 3px;
-                background-color: $color-primary;
-                top: 100%;
-            }
-        }
-    } 
-
-    &--dark &__link {
-        color: $color-dark-l;
-        &:hover {
-            color: $color-dark-xl;
-        }
-    }
-}
-
-.slider {
-    position: relative;
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        max-width: 990px;
-        margin: 0 auto;
-    }
-    &__nav {
-        box-sizing: border-box;
-        width: 52px;
-        height: 52px;
-
-        position: absolute;
-        top: calc(50% - 42px);
-        border: 2px solid $color-primary;
-        border-radius: 100%;
-        &--left {
-            left: 0;
-        }
-        &--right {
-            right: 0;
-        }
-    }
-}
-
-.pet-card {
-    &__photo {
-        display: block;
-        margin-bottom: 30px;
-    }
-    &__name {
-        @extend %typography-h4;
-        color: $color-dark-l;
-        text-align: center;
-        margin-bottom: 30px;
-    } 
-    &__button {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-}

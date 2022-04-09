@@ -13,12 +13,14 @@
     }
    
     &__content { }
+    
     &__title {
         @extend %typography-h2;
         color: $color-light-xl;
         margin-bottom: 40px;
         max-width: 360px
     }
+
     &__desc {
         @extend %typography-paragraph-l;
         color: $color-dark-s;
