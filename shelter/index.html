@@ -9,23 +9,23 @@
 <body>
     <header id="#start" class="section start">
         <div class="start__top">
-            <div class="start__logo logo">
+            <a class="start__logo logo" href="/">
                 <h1 class="logo__title">Cozy House</h1>
                 <p class="logo__subtitle">Shelter for pets in Boston</p>
-            </div>
+            </a>
             <nav class="start__navigation">
                 <ul class="navigation">
-                    <li class="navigation__item"><a href="#about" class="navigation__link">About the shelter</a></li>
-                    <li class="navigation__item"><a href="#our-pets" class="navigation__link">Our pets</a></li>
-                    <li class="navigation__item"><a href="#help-shelter" class="navigation__link">Help the shelter</a></li>
-                    <li class="navigation__item"><a href="#contacts" class="navigation__link">Contacts</a></li>
+                    <li class="navigation__item navigation__item--current"><a href="#about" class="navigation__link">About the shelter</a></li>
+                    <li class="navigation__item"><a href="/our-pets" class="navigation__link">Our pets</a></li>
+                    <li class="navigation__item"><a href="/#help-shelter" class="navigation__link">Help the shelter</a></li>
+                    <li class="navigation__item"><a href="/#contacts" class="navigation__link">Contacts</a></li>
                 </ul>
             </nav>
         </div>
         <div class="start__content">
             <h2 class="start__title">Not only people need a house</h2>
             <p class="start__desc">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-            <a class="start__button button" href="">Make a friend</a>
+            <a class="start__button button button--hover-bgc-white" href="#make-a-friend">Make a friend</a>
         </div>
     </header>
     <section id="about" class="section about">
@@ -38,7 +38,7 @@
             </div>
         </div>
     </section>
-    <section id="our-pets" class="section our-pets">
+    <section id="make-a-friend" class="section our-pets">
         <div class="our-pets__content">
             <h3 class="our-pets__title">Our friends who<br>are looking for a house</h3>
             <div class="our-pets__slider slider">
@@ -48,7 +48,7 @@
                             <img class="pet-card__photo" src="/assets/pet/katrine.png" alt="">
                             <p class="pet-card__name">Katrine</p>
                             <div class="pet-card__button">
-                                <a href="" class="pet-card__button button button--inverted">Learn more</a>
+                                <a href="#!" class="pet-card__button button button--inverted">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                             <img class="pet-card__photo" src="/assets/pet/jennifer.png" alt="">
                             <p class="pet-card__name">Jennifer</p>
                             <div class="pet-card__button">
-                                <a href="" class="pet-card__button button button--inverted">Learn more</a>
+                                <a href="#!" class="pet-card__button button button--inverted">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                             <img class="pet-card__photo" src="/assets/pet/woody.png" alt="">
                             <p class="pet-card__name">Woody</p>
                             <div class="pet-card__button">
-                                <a href="" class="pet-card__button button button--inverted">Learn more</a>
+                                <a href="#!" class="pet-card__button button button--inverted">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                 ></button>
             </div>
             <div class="our-pets__button">
-                <a href="#" class="our-pets__button button button--centered-block">Get to know the rest</a>
+                <a href="/our-pets" class="our-pets__button button button--centered-block">Get to know the rest</a>
             </div>
 
         </div>
@@ -135,7 +135,7 @@
             <div class="donation__right">
                 <h2 class="donation__title">You can also make a donation</h2>
                 <p class="donation__text">Name of the bank / Type of bank account</p>
-                <a class="donation__button" href=""
+                <a class="donation__button" href="#!"
                 ><img src="/assets/icons/button-icon-card.svg"
                 ><span>8380 2880 8028 8791 7435</span></a>
                 <p class="donation__legal">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
@@ -146,22 +146,22 @@
         <div class="contacts__content">
             <div class="contacts__suggestions">
                 <h3 class="contacts__title">For questions and suggestions</h3>
-                <p class="contacts__item contacts__item--email"
+                <a class="contacts__item contacts__item--email" href="mailto:admin@ya.ru"
                     ><img src="/assets/icons/contacts-mail.svg" alt=""
                     ><span>email@shelter.com</span
-                ></p>
-                <p class="contacts__item contacts__item--phone"
+                ></a>
+                <a class="contacts__item contacts__item--phone" href="tel:+13 674 567 75 54"
                     ><img src="/assets/icons/contacts-phone.svg" alt=""
-                    ><span>+13 674 567 75 54</span></p>
+                    ><span>+13 674 567 75 54</span></a>
             </div>
             <div class="contacts__visit">
                 <h3 class="contacts__title contacts__title--visit">We are waiting for your visit</h3>
-                <p class="contacts__item contacts__item--location1"
+                <a class="contacts__item contacts__item--location1" href="https://goo.gl/maps/m4MAKEbLY7Bn2BVr7" target="_blank"
                     ><img src="/assets/icons/contacts-pin.svg" alt=""
-                    ><span>1 Central Street, Boston (entrance from the store)</span></p>
-                <p class="contacts__item contacts__item--location2"
-                    ><img src="/assets/icons/contacts-pin.svg" alt=""
-                    ><span>18 South Park, London</span></p>
+                    ><span>1 Central Street, Boston (entrance from the store)</span></a>
+                <a class="contacts__item contacts__item--location2" href="https://www.google.com/maps/@53.0657278,-8.8208696,18z?hl=en" target="_blank"
+                    ><img src="/assets/icons/contacts-pin.svg" alt="" 
+                    ><span>18 South Park, London</span></a>
             </div>
         </div>
     </footer>
