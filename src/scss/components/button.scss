@@ -1,0 +1,29 @@
+.button {
+
+    box-sizing: border-box;
+    display: inline-block;
+    color: $color-dark-3xl;
+    background-color: $color-primary;
+    border: 2px solid;
+    border-color: $color-primary;
+
+    @extend %typography-button;
+
+    padding: 13px 43px;
+
+    border-radius: 100px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: white;
+        border-color: $color-primary-light;
+    }
+
+    &--inverted {
+        background-color: white;
+        &:hover {
+            background-color: $color-primary-light;
+        }
+    }
+
+}

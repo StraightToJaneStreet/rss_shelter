@@ -1,0 +1,16 @@
+.pet-card {
+    padding-bottom: 30px;
+    &__photo {
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+    &__name {
+        @extend %typography-h4;
+        color: $color-dark-l;
+        text-align: center;
+        margin-bottom: 30px;
+    } 
+    &__button {
+        text-align: center;
+    }
+}

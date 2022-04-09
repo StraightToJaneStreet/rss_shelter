@@ -1,0 +1,25 @@
+.slider {
+    position: relative;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 990px;
+        margin: 0 auto;
+    }
+    &__nav {
+        box-sizing: border-box;
+        width: 52px;
+        height: 52px;
+
+        position: absolute;
+        top: calc(50% - 42px);
+        border: 2px solid $color-primary;
+        border-radius: 100%;
+        &--left {
+            left: 0;
+        }
+        &--right {
+            right: 0;
+        }
+    }
+}

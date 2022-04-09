@@ -1,0 +1,33 @@
+.logo {
+
+    &__title {
+        @extend %typography-logo-title;
+        color: $color-primary;
+        margin: 0 0 10px 0;
+        padding: 0;
+        position: relative;
+    }
+    
+    &__subtitle {
+        @extend %typography-logo-subtitle;
+        color: $color-light-xl;
+        text-align: right;
+        margin: 0 1px 0 0;
+        padding: 0;
+    }
+
+    &--dark &__title {
+        color: $color-dark-l;
+    }
+
+    &--dark &__subtitle {
+        color: $color-dark-xl;
+    }
+}
+
+.section {
+    box-sizing: border-box;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
