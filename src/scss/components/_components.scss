@@ -43,6 +43,12 @@
         margin: 0 1px 0 0;
         padding: 0;
     }
+    &--dark &__title {
+        color: $color-dark-l;
+    }
+    &--dark &__subtitle {
+        color: $color-dark-xl;
+    }
 }
 
 .section {
@@ -82,6 +88,13 @@
             }
         }
     } 
+
+    &--dark &__link {
+        color: $color-dark-l;
+        &:hover {
+            color: $color-dark-xl;
+        }
+    }
 }
 
 .slider {
