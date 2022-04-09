@@ -33,3 +33,12 @@
     }
 
 }
+
+.pet-card:hover {
+    .button--inverted {
+        background-color: $color-primary;
+        &:hover {
+            background-color: unset;
+        }
+    }
+}
