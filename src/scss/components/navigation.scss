@@ -10,6 +10,7 @@
         &:last-child {
             margin-right: 0; 
         }
+
     }
 
     &__link {
@@ -19,15 +20,19 @@
         text-decoration-line: 2px solid;
         &:hover {
             color: $color-light-s;
-            &:after {
-                display: block;
-                content: "";
-                height: 3px;
-                background-color: $color-primary;
-                top: 100%;
-            }
         }
     } 
+
+    &__item--current &__link {
+        color: $color-light-s;
+        &:after {
+            display: block;
+            content: "";
+            height: 3px;
+            background-color: $color-primary;
+            top: 100%;
+        }
+    }
 
     &--dark &__link {
         color: $color-dark-l;
