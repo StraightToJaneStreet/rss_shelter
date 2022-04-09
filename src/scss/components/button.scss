@@ -15,14 +15,20 @@
     text-decoration: none;
 
     &:hover {
-        background-color: white;
+        background-color: unset;
         border-color: $color-primary-light;
     }
 
     &--inverted {
-        background-color: white;
+        background-color: unset;
         &:hover {
             background-color: $color-primary-light;
+        }
+    }
+
+    &--hover-bgc-white {
+        &:hover {
+            background-color: white;
         }
     }
 
