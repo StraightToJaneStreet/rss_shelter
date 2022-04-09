@@ -31,8 +31,10 @@
         @extend %typography-h4;
         background-color: $color-primary;
         color: $color-dark-l;
+        border: 2px solid;
         border-radius: 9px;
-        padding: 10px 15px;
+        border-color: $color-primary;
+        padding: 8px 13px;
         vertical-align: center;
         text-decoration: none;
 
@@ -48,6 +50,7 @@
 
         &:hover {
             background-color: unset;
+            border-color: $color-primary-light;
         }
     }
 
