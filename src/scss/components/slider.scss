@@ -7,14 +7,23 @@
         margin: 0 auto;
     }
     &__nav {
-        box-sizing: border-box;
         width: 52px;
         height: 52px;
 
         position: absolute;
         top: calc(50% - 26px);
-        border: 2px solid $color-primary;
+
+        box-sizing: border-box;
+
+        border: 2px solid;
+        border-color: $color-primary;
         border-radius: 100%;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $color-primary-light;
+            border-color: $color-primary-light;
+        }
         &--left {
             left: 0;
         }
