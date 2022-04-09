@@ -7,23 +7,120 @@
     <script type="text/javascript" src="./bundle.js"></script> 
 </head>
 <body>
-    <header class="topbar">
-        <div class="topbar__logo logo logo--dark">
-            <h1 class="logo__title">Cozy House</h1>
-            <p class="logo__subtitle">Shelter for pets in Boston</p>
+    <header class="section topbar">
+        <div class="topbar__content">
+            <div class="topbar__logo logo logo--dark">
+                <h1 class="logo__title">Cozy House</h1>
+                <p class="logo__subtitle">Shelter for pets in Boston</p>
+            </div>
+            <nav class="start__navigation">
+                <ul class="navigation navigation--dark">
+                    <li class="navigation__item"><a href="#about" class="navigation__link">About the shelter</a></li>
+                    <li class="navigation__item"><a href="#our-pets" class="navigation__link">Our pets</a></li>
+                    <li class="navigation__item"><a href="#help-shelter" class="navigation__link">Help the shelter</a></li>
+                    <li class="navigation__item"><a href="#contacts" class="navigation__link">Contacts</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="start__navigation">
-            <ul class="navigation navigation--dark">
-                <li class="navigation__item"><a href="#about" class="navigation__link">About the shelter</a></li>
-                <li class="navigation__item"><a href="#our-pets" class="navigation__link">Our pets</a></li>
-                <li class="navigation__item"><a href="#help-shelter" class="navigation__link">Help the shelter</a></li>
-                <li class="navigation__item"><a href="#contacts" class="navigation__link">Contacts</a></li>
-            </ul>
-        </nav>
     </header>
     <section class="section our-friends">
         <div class="our-friends__content">
-            <div class="our-friends__title">Our friends who are loogin for a house</div>
+            <div class="our-friends__title">Our friends who<br>are looking for a house</div>
+            <div class="our-friends__catalog catalog">
+                <div class="catalog__grid">
+                    <div class="catalog__item">
+                        <div class="pet-card">
+                            <img class="pet-card__photo" src="/assets/pet/katrine.png" alt="">
+                            <p class="pet-card__name">Katrine</p>
+                            <div class="pet-card__button">
+                                <a href="#" class="pet-card__button button button--inverted">Learn more</a>
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="catalog__item">
+                        <div class="pet-card">
+                            <img class="pet-card__photo" src="/assets/pet/jennifer.png" alt="">
+                            <p class="pet-card__name">Jennier</p>
+                            <div class="pet-card__button">
+                                <a href="#" class="pet-card__button button button--inverted">Learn more</a>
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="catalog__item">
+                        <div class="pet-card">
+                            <img class="pet-card__photo" src="/assets/pet/woody.png" alt="">
+                            <p class="pet-card__name">Woody</p>
+                            <div class="pet-card__button">
+                                <a href="#" class="pet-card__button button button--inverted">Learn more</a>
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="catalog__item">
+                        <div class="pet-card">
+                            <img class="pet-card__photo" src="/assets/pet/sophia.png" alt="">
+                            <p class="pet-card__name">Sophia</p>
+                            <div class="pet-card__button">
+                                <a href="#" class="pet-card__button button button--inverted">Learn more</a>
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="catalog__item">
+                        <div class="pet-card">
+                            <img class="pet-card__photo" src="/assets/pet/timmy.png" alt="">
+                            <p class="pet-card__name">Timmy</p>
+                            <div class="pet-card__button">
+                                <a href="#" class="pet-card__button button button--inverted">Learn more</a>
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="catalog__item">
+                        <div class="pet-card">
+                            <img class="pet-card__photo" src="/assets/pet/charly.png" alt="">
+                            <p class="pet-card__name">Charly</p>
+                            <div class="pet-card__button">
+                                <a href="#" class="pet-card__button button button--inverted">Learn more</a>
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="catalog__item">
+                        <div class="pet-card">
+                            <img class="pet-card__photo" src="/assets/pet/scarlett.png" alt="">
+                            <p class="pet-card__name">Scarlett</p>
+                            <div class="pet-card__button">
+                                <a href="#" class="pet-card__button button button--inverted">Learn more</a>
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="catalog__item">
+                        <div class="pet-card">
+                            <img class="pet-card__photo" src="/assets/pet/freddie.png" alt="">
+                            <p class="pet-card__name">Freddie</p>
+                            <div class="pet-card__button">
+                                <a href="#" class="pet-card__button button button--inverted">Learn more</a>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+                <nav class="pagination">
+                    <ul class="pagination__list">
+                        <li class="pagination__item"
+                            ><a class="pagination__button pagination__button pagination__button--disabled" href="#pagination_start"><<</a
+                        ></li>
+                        <li class="pagination__item"
+                            ><a class="pagination__button pagination__button--disabled" href="#pagination_prev"><</a
+                        ></li>
+                        <li class="pagination__item"
+                            ><a class="pagination__button pagination__button--current" href="#pagignation" data-page="1">1</a
+                        ></li>
+                        <li class="pagination__item"
+                            ><a class="pagination__button" href="#pagination_next">></a
+                        ></li>
+                        <li class="pagination__item"
+                            ><a class="pagination__button" href="#pagination_last">>></a
+                        ></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </section>
     <footer id="contacts" class="section contacts">
