@@ -1,7 +1,7 @@
 .donation {
     background-color: $color-light-l;
     &__content {
-        padding: 80px 0 99px 0;        
+        padding: 80px 0 101px 0;        
         max-width: 915px;
         margin: 0 auto;
         display: flex;
@@ -27,7 +27,7 @@
         margin: 0 0 18px 0;
     }
     &__button {
-        display: block;
+        display: inline-block;
         @extend %typography-h4;
         background-color: $color-primary;
         color: $color-dark-l;
@@ -57,6 +57,6 @@
     &__legal {
         @extend %typography-paragraph-s;
         color: $color-dark-m;
-        margin-bottom: 0;
+        margin: 0;
     }
 }
