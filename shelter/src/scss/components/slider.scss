@@ -1,11 +1,13 @@
 .slider {
     position: relative;
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
         max-width: 990px;
         margin: 0 auto;
     }
+
     &__nav {
         width: 52px;
         height: 52px;
@@ -18,6 +20,12 @@
         border: 2px solid;
         border-color: $color-primary;
         border-radius: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: unset;
 
         &:hover {
             cursor: pointer;
