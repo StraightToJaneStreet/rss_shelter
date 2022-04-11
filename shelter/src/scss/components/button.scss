@@ -15,12 +15,12 @@
     text-decoration: none;
 
     &:hover {
-        background-color: unset;
+        background-color: $color-primary-light;
         border-color: $color-primary-light;
     }
 
     &--inverted {
-        background-color: unset;
+        background-color: white;
         &:hover {
             background-color: $color-primary-light;
         }
@@ -33,12 +33,17 @@
     }
 
 }
+.pet-card {
+    .button--inverted {
+        background-color: $color-light-s; 
+    }
+}
 
 .pet-card:hover {
     .button--inverted {
         background-color: $color-primary;
         &:hover {
-            background-color: unset;
+            background-color: $color-primary-light;
         }
     }
 }
