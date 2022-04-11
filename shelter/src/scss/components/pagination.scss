@@ -26,8 +26,10 @@
 
         color: $color-dark-3xl;
         border-color: $color-primary;
+
         &:hover {
-            background-color: $color-primary;
+            background-color: $color-primary-light;
+            border-color: $color-primary-light;
         }
 
         &--current {
@@ -35,6 +37,8 @@
             cursor: default;
             &:hover {
                 cursor: default;
+                background-color: $color-primary;
+                border-color: $color-primary;
             }
         }
 
