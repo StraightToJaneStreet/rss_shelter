@@ -49,7 +49,7 @@
         }
 
         &:hover {
-            background-color: unset;
+            background-color: $color-primary-light;
             border-color: $color-primary-light;
         }
     }
