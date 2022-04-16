@@ -13,6 +13,11 @@ module.exports = {
       },
       compress: true,
       port: 9000,
+      client: {
+        overlay: {
+          warnings: false
+        }
+      }
     },
     module: {
         rules: [
