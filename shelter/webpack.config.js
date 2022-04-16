@@ -1,9 +1,11 @@
 const path = require('path')
+const CopyPlugin = require('copy-webpack-plugin')
 module.exports = {
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        clean: true
     },
     devServer: {
       static: {
@@ -14,18 +16,6 @@ module.exports = {
     },
     module: {
         rules: [
-          // {
-          //   test: /\.(png|jpg|gif)$/,
-          //   use: [
-          //     {
-          //         loader: 'file-loader',
-          //         options: {
-          //           name: 'assets/image/[name].[ext]',
-          //           outputPath: '',
-          //         }
-          //     }
-          //   ]
-          // },
           {
             test: /\.s[ca]ss$/,
             use: [
@@ -39,5 +29,20 @@ module.exports = {
             ]
           }
         ]
-    }
+    },
+    plugins: [
+      new CopyPlugin({
+        patterns: [
+          {
+            context: path.resolve(__dirname, "dist"),
+            from: path.resolve(__dirname, "assets"),
+            to: "assets"
+          },
+          {
+            context: path.resolve(__dirname, "dist"),
+            from: path.resolve(__dirname, "src", "pages")
+          }
+        ]
+      })
+    ]
 }
