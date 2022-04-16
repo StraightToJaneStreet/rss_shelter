@@ -1,12 +1,15 @@
 .donation {
+
     background-color: $color-light-l;
+
     &__content {
-        padding: 80px 0 101px 0;        
+        padding: 80px 0 99px 0;        
         max-width: 915px;
         margin: 0 auto;
         display: flex;
         gap: 30px;
     }
+
     &__left {
         display: flex;
         flex-direction: column;
@@ -15,17 +18,20 @@
             display: block;
         }
     }
+
     &__title {
         @extend %typography-h3;
         color: $color-dark-l;
         max-width: 300px;
         margin: 0 0 20px 0;
     }
+
     &__text {
         @extend %typography-h5;
         color: $color-dark-l;
         margin: 0 0 18px 0;
     }
+
     &__button {
         display: inline-block;
         @extend %typography-h4;
@@ -59,4 +65,21 @@
         color: $color-dark-m;
         margin: 0;
     }
+
+    $breakpoint-tablet: 1000px;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        &__content {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 0;
+            padding-bottom: 100px;
+        }
+        &__right {
+            max-width: 380px;
+            margin-bottom: 60px;
+        }
+    }
+
 }

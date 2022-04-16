@@ -33,4 +33,27 @@
             text-align: center;
         }
     }
+    $breakpoint-tablet: 1119px;
+    @media screen and (max-width: $breakpoint-tablet) {
+        
+        &__title {
+            margin-bottom: 59px;
+        }
+
+        &__content {
+            max-width: 630px;
+            margin: 0 auto;
+        } 
+
+        &__icons {
+            column-gap: 0;
+            justify-content: space-between;
+        }
+
+        &__icon {
+            max-width: 170px;
+            flex: 1 0 calc(100% / 3);
+        }
+
+    }
 }

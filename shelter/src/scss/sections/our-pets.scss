@@ -1,8 +1,10 @@
 .our-pets {
     background-color: $color-light-l;
+    padding: 0 40px;
     &__content {
         padding: 80px 0 100px 0;
     }
+
     &__title {
         @extend %typography-h3;
         color: $color-dark-l;
@@ -13,11 +15,16 @@
         position: relative;
         top: 1px;
     }
+
     &__slider {
         margin-bottom: 60px;
     }
+
     &__button {
         text-align: center;
     }
-
+    $breakpoint-tablet: 1040px;
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 0 30px;
+    }
 }

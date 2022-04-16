@@ -1,5 +1,6 @@
 .about {
     padding: 0 40px;
+
     &__wrapper {
         display: flex;
         align-items: center;
@@ -8,18 +9,21 @@
         padding: 80px 0 100px 0;
         margin: 0 auto;
     }
+
     &__left {
         text-align: center;
         img { display: block; }
     }
-    &__right {
-    }
+
+    &__right { }
+
     &__title {
         @extend %typography-h3;
         color: $color-dark-l;
         max-width: 360px;
         margin: 0px 0 23px 0;
     }
+
     &__para {
         @extend %typography-paragraph-l;
         color: $color-dark-xl;
@@ -29,8 +33,24 @@
             margin-bottom: 0px;
         }
     }
+
     $breakpoint-about-tablet: 840px;
+    
     @media screen and (max-width: $breakpoint-about-tablet) {
+
         padding: 0 30px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin: 0 auto;
+            padding-bottom: 101px;
+        }
+
+        &__right {
+            margin-bottom: 80px;
+        }
+
     }
 }
