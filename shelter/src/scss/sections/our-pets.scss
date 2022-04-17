@@ -23,8 +23,25 @@
     &__button {
         text-align: center;
     }
+
     $breakpoint-tablet: 1040px;
     @media screen and (max-width: $breakpoint-tablet) {
         padding: 0 30px;
+    }
+
+    $breakpoint-mobile: 740px;
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: 0 42px; 
+        &__content {
+            padding: 10px; 
+        }
+        &__title {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+        }
     }
 }
