@@ -1,0 +1,34 @@
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        position: relative;
+        bottom: 1px;
+    }
+
+    &__mobile-navigation {
+        display: none;
+        position: relative;
+        top: 2px;
+        right: 38px;
+    }
+
+    &__navigation { }
+
+    $breakpoint-header-mobile: 735px;
+
+    @media screen and (max-width: $breakpoint-header-mobile) {
+        
+        &__mobile-navigation {
+            display: block;
+        }
+
+        &__navigation {
+            display: none;
+        }
+
+    }
+}
