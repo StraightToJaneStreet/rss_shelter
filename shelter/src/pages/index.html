@@ -7,12 +7,34 @@
     <script type="text/javascript" src="./bundle.js"></script> 
 </head>
 <body>
+
+    <nav class="mobnav-overlay" id="mobnav-overlay">
+        <div class="mobnav-overlay__top">
+            <a class="mobnav-overlay__logo logo" href=".">
+                <h2 class="logo__title">Cozy House</h2>
+                <p class="logo__subtitle">Shelter for pets in Boston</p>
+            </a>
+            <button class="mobnav-btn mobnav-btn--rotated" id="mobnav-btn-close"><img src="./assets/icons/menu-burger.svg" alt="open menu icon"></button>
+        </div>
+        <ul class="mobnav-overlay__list">
+            <li class="mobnav-overlay__item mobnav-overlay__item--current"><a class="mobnav-overlay__link" href="#" >About the shelter</a></li>
+            <li class="mobnav-overlay__item"><a class="mobnav-overlay__link" href="our-pets">Our pets</a></li>
+            <li class="mobnav-overlay__item"><a class="mobnav-overlay__link" href="#help-shelter">Help the shelter</a></li>
+            <li class="mobnav-overlay__item"><a class="mobnav-overlay__link" href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
     <section class="cover">
         <header id="#start" class="cover__top header">
             <a class="header__logo logo" href=".">
                 <h1 class="logo__title">Cozy House</h1>
                 <p class="logo__subtitle">Shelter for pets in Boston</p>
             </a>
+            <div class="header__mobile-navigation">
+                <button class="mobnav-btn" id="mobnav-btn-open">
+                    <img src="./assets/icons/menu-burger.svg" alt="menu burger icon">
+                </button>
+            </div>
             <nav class="header__navigation">
                 <ul class="navigation">
                     <li class="navigation__item navigation__item--current"><a href="#" class="navigation__link">About the shelter</a></li>
@@ -28,6 +50,7 @@
             <a class="cover__button button" href="#make-a-friend">Make a friend</a>
         </div>
     </section>
+
     <section id="about" class="about">
         <div class="about__wrapper">
             <div class="about__left"><img class="about__decimage" src="./assets/image/about-pets.png" alt=""></div>
@@ -38,6 +61,7 @@
             </div>
         </div>
     </section>
+
     <section id="make-a-friend" class="our-pets">
         <div class="our-pets__content">
             <h3 class="our-pets__title">Our friends who<br>are looking for a house</h3>
@@ -87,6 +111,7 @@
             </div>
         </div>
     </section>
+
     <section id="help-shelter" class="help-shelter">
         <div class="help-shelter__content">
             <h3 class="help-shelter__title title">How you can help our shelter</h3>
@@ -130,6 +155,7 @@
             </div>
         </div>
     </section>
+
     <section id="donation" class="donation">
         <div class="donation__content">
             <div class="donation__left"><img class="donation__decimg" src="./assets/image/donation-dog.png" alt=""></img></div>
@@ -143,6 +169,7 @@
             </div>
         </div>
     </section>
+
     <footer id="contacts" class="section contacts">
         <div class="contacts__content">
             <div class="contacts__suggestions">
