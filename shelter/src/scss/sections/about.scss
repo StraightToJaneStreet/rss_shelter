@@ -53,4 +53,32 @@
         }
 
     }
+
+    $breakpoint-mobile: 470px;
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: 0 10px;
+        &__wrapper {
+            padding-top: 42px;
+            padding-bottom: 42px;
+        }
+        &__right {
+            margin-bottom: 42px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        &__title {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            text-align: center;
+        }
+        &__para {
+        }
+        &__decimage {
+            width: 260px;
+        }
+    }
 }
