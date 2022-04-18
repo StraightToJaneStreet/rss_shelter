@@ -8,10 +8,10 @@
 
 .mobnav-overlay {
 
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 
     padding: 30px 10px 0 10px;
 
@@ -36,6 +36,7 @@
 
     &__button {
         flex-shrink: 0;
+        margin-right: 41px;
     }
 
     &__list {
@@ -71,7 +72,22 @@
         }
     }
 
+    $parent: &;
+
     &--visible {
-        display: block;
+        @media screen and (max-width: 735px) {
+            display: block;
+        }
+    }
+    &--light {
+        background-color: $color-primary-light;
+        #{$parent}__link {
+            color: $color-dark-l;
+            &:hover {
+                color: $color-dark-3xl;
+            }
+        }
     }
 }
+
+

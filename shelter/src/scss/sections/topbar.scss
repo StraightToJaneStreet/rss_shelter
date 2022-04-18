@@ -1,7 +1,38 @@
+
 .topbar {
+    max-width: 1280px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
     padding: 30px 40px;
+    background-color: white;
+    box-sizing: border-box;
+    z-index: 1;
     &__content {
         display: flex;
         justify-content: space-between;
     }
+
+    $breakpoint-tablet: 768px;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 30px;
+    }
+
+    $breakpoint-mobile: 735px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: 30px 10px;
+
+        .start__navigation {
+            display: none;
+        }
+
+        &__content {
+            align-items: center;
+        }
+    }
+
 }

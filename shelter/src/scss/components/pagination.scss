@@ -56,4 +56,11 @@
 
     }
 
+    $breakpoint-mobile: 600px;
+    @media screen and (max-width: $breakpoint-mobile) {
+        &__list {
+            column-gap: 10px;
+        }
+    }
+
 }
