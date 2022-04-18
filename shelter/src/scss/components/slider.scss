@@ -50,6 +50,10 @@
             border-color: $color-primary-light;
         }
 
+        &--mobile {
+            display: none;
+        }
+
         &--left {
             margin-right: 12px;
         }
@@ -75,13 +79,31 @@
             flex: 0 0 (calc(100% / 5))
         }
     } 
+
     $breakpoint-mobile: 740px;
     @media screen and (max-width: $breakpoint-mobile) {
-        &_nav--desktop {
+        padding: 0 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 80px;
+        &__drive {
+            width: calc((100% - 270px) * 3 + 270px * 3);
+        }
+
+        &__item {
+            flex: 0 0 calc(100% / 3)
+        }
+
+        &__wrapper {
+            margin-bottom: 20px;
+        }
+        &__nav--desktop {
             display: none;
         }
-        &_nav--mobile {
+        &__nav--mobile {
             display: block;
+            margin: 0;
         }
     }
 }
