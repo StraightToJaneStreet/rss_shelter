@@ -32,6 +32,10 @@
         margin: 0 0 18px 0;
     }
 
+    &__title-br {
+        display: none;
+    }
+
     &__button {
         display: inline-block;
         @extend %typography-h4;
@@ -82,4 +86,50 @@
         }
     }
 
+    $breakpoint-mobile: 640px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: 0 10px;
+        &__content {
+            padding: 42px 0;
+            padding-bottom: 44px;
+        }
+        &__right {
+            margin-bottom: 42px;
+            text-align: center;
+        }
+        &__title {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+
+            text-align: center;
+            max-width: 300px;
+
+            margin-bottom: 22px;
+        }
+        &__text {
+            text-align: center;
+            letter-spacing: 0;
+            margin-bottom: 25px;
+        }
+        &__title-br {
+            display: block;
+        }
+        &__button {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 110%;
+            letter-spacing: 0.06em;
+        }
+        &__decimg {
+            width: 260px;
+        }
+
+    }
 }
