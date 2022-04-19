@@ -1,4 +1,5 @@
 .donation {
+
     box-sizing: border-box;
     max-width: 1280px;;
     margin: 0 auto;
@@ -72,8 +73,6 @@
         margin: 0;
     }
 
-    $breakpoint-tablet: 1000px;
-
     @media screen and (max-width: $breakpoint-tablet) {
         &__content {
             display: flex;
@@ -87,8 +86,6 @@
             margin-bottom: 60px;
         }
     }
-
-    $breakpoint-mobile: 640px;
 
     @media screen and (max-width: $breakpoint-mobile) {
         padding: 0 10px;

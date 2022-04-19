@@ -37,9 +37,7 @@
         }
     }
 
-    $breakpoint-about-tablet: 840px;
-    
-    @media screen and (max-width: $breakpoint-about-tablet) {
+    @media screen and (max-width: $breakpoint-tablet) {
 
         padding: 0 30px;
 
@@ -57,7 +55,6 @@
 
     }
 
-    $breakpoint-mobile: 470px;
     @media screen and (max-width: $breakpoint-mobile) {
         padding: 0 10px;
         
@@ -82,8 +79,7 @@
             text-align: center;
         }
 
-        &__para {
-        }
+        &__para { }
 
         &__decimage {
             width: 260px;

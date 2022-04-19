@@ -36,9 +36,7 @@
         top: 1px;
     }
 
-    $breakpoint-cover-tablet: 1200px;
-
-    @media screen and (max-width: $breakpoint-cover-tablet) {
+    @media screen and (max-width: $breakpoint-tablet) {
         padding: 30px 30px 694px 30px;            
         background: url("./assets/image/start-pups.png") no-repeat right 30px bottom / 569px,
                     url("./assets/image/background-tile.png"),
@@ -61,7 +59,6 @@
         }
     }
 
-    $breakpoint-mobile: 735px;
     @media screen and (max-width: $breakpoint-mobile) {
         padding: 30px 10px 377px 10px;
         background: url("./assets/image/start-pups.png") no-repeat right 10px bottom / 260px,

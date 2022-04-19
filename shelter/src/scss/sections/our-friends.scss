@@ -19,7 +19,6 @@
         margin: 0 auto 45px auto;
     }
 
-    $breakpoint-tablet: 1270px;
     @media screen and (max-width: $breakpoint-tablet) {
 
         padding: 0 30px;
@@ -34,7 +33,6 @@
         }
     }
 
-    $breakpoint-mobile: 600px;
     @media screen and (max-width: $breakpoint-mobile) {
         padding: 0 10px;
         padding-top: 120px;

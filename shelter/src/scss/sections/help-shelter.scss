@@ -37,7 +37,6 @@
         }
     }
 
-    $breakpoint-tablet: 1119px;
     @media screen and (max-width: $breakpoint-tablet) {
         
         &__title {
@@ -60,8 +59,7 @@
         }
 
     }
-
-    $breakpoint-mobile: 420px;
+    
     @media screen and (max-width: $breakpoint-mobile) {
         padding: 0 10px;
         &__content {

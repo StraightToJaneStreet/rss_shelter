@@ -56,7 +56,6 @@
         }
     }
 
-    $breakpoint-tablet: 1125px;
     @media screen and (max-width: $breakpoint-tablet) {
         padding: 30px 0 375px 0;
         background: url("./assets/image/footer-puppy.png") no-repeat center bottom,
@@ -77,7 +76,6 @@
         }
     }
 
-    $breakpoint-mobile: 670px;
     @media screen and (max-width: $breakpoint-mobile) {
         background: url("./assets/image/footer-puppy.png") no-repeat center bottom / 260px,
                     url("./assets/image/background-tile.png"),
