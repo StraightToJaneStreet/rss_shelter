@@ -48,6 +48,21 @@
 
     &__item {
         list-style-type: none;
+        &--current {
+            .mobnav-overlay__link {
+                color: $color-light-s;
+                position: relative;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    top: 100%;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $color-primary;
+                }
+            }
+        }
     }
 
     &__link {
@@ -56,21 +71,6 @@
         text-decoration: none;
     }
 
-    &__item--current {
-        .mobnav-overlay__link {
-            color: $color-light-s;
-            position: relative;
-            &:after {
-                position: absolute;
-                content: "";
-                display: block;
-                top: 100%;
-                width: 100%;
-                height: 3px;
-                background-color: $color-primary;
-            }
-        }
-    }
 
     $parent: &;
 
