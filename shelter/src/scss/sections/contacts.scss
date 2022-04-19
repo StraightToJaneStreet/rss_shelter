@@ -94,6 +94,9 @@
             display: flex;
             flex-direction: column;
             row-gap: 40px;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
         }
         &__suggestions {
             max-width: none;
@@ -113,11 +116,11 @@
         }
         &__item {
             &--location1 {
-                padding-left: 10px;
+                padding-left: 0;
                 margin-bottom: 39px;
             }
             &--location2 {
-                padding-left: 10px;
+                padding-left: 0;
             }
         }
     }

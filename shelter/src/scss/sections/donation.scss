@@ -109,12 +109,18 @@
             max-width: 300px;
 
             margin-bottom: 22px;
+
+            margin-left: auto;
+            margin-right: auto;
+
         }
+
         &__text {
             text-align: center;
             letter-spacing: 0;
             margin-bottom: 25px;
         }
+
         &__title-br {
             display: block;
         }
@@ -128,6 +134,9 @@
         }
         &__decimg {
             width: 260px;
+        }
+        &__legal {
+            text-align: justify;
         }
 
     }

@@ -77,9 +77,13 @@
             line-height: 130%;
             letter-spacing: 0.06em;
             text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        &__para { }
+        &__para {
+            text-align: justify;
+        }
 
         &__decimage {
             width: 260px;
