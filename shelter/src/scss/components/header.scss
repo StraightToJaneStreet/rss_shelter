@@ -18,9 +18,7 @@
 
     &__navigation { }
 
-    $breakpoint-header-mobile: 735px;
-
-    @media screen and (max-width: $breakpoint-header-mobile) {
+    @media screen and (max-width: $breakpoint-mobile) {
         
         &__mobile-navigation {
             display: block;
