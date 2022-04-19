@@ -29,6 +29,11 @@
 
     @media screen and (max-width: $breakpoint-tablet) {
         padding: 0 30px;
+        &__slider {
+            max-width: 730px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     @media screen and (max-width: $breakpoint-mobile) {
