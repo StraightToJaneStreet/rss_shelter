@@ -6,7 +6,19 @@
     &--rotated {
         transform: rotate(90deg);
     }
+    transition: transform .5s;
 }
+
+@keyframes menu-slidein {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
 
 .mobnav-overlay {
 
@@ -18,7 +30,8 @@
     height: 100%;
     z-index: 10;
 
-    display: none;
+    visibility: hidden;
+    transition: visibility 0.75s;
 
     height: 100vh;
     z-index: 1;
@@ -33,14 +46,15 @@
 
         position: absolute;
         top: 0;
-        right: 0;
+        right: -100%;
 
         padding: 30px 10px 0 10px;
 
         box-sizing: border-box;
 
-
         background-color: $color-dark-3xl;
+
+        transition: right 0.75s;
     }
 
     &__top {
@@ -90,14 +104,19 @@
         text-decoration: none;
     }
 
-
     $parent: &;
 
     &--visible {
+        #{$parent}__content {
+            animation: menu-slidein .75s;
+            animation-direction: alternate;
+            right: 0;
+        }
         @media screen and (max-width: $breakpoint-tablet) {
-            display: block;
+            visibility: visible;
         }
     }
+
     &--light {
         background-color: $color-primary-light;
         #{$parent}__link {
@@ -107,6 +126,7 @@
             }
         }
     }
+
 }
 
 
