@@ -2,7 +2,7 @@ import './scss/style.scss'
 
 class MobileMenu {
 
-  constructor({overlay, button, opened} = { opened: false } ) {
+  constructor({overlay, button, opened, topWhenOpened} = { opened: false, topWhenOpened: false } ) {
 
     this.opened = opened
 
@@ -12,12 +12,18 @@ class MobileMenu {
     this.overlayElement = overlay 
     this.buttonElement = button
 
+    this.topWhenOpened = topWhenOpened
+
     this.setupHandlers()
   }
 
   setupHandlers() {
     this.buttonElement.addEventListener('click', this.toggle.bind(this))
     this.overlayElement.addEventListener('click', this.handleOverlayClick.bind(this))
+
+    this.overlayElement.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', this.close.bind(this))
+    })
   }
 
   handleOverlayClick(e) {
@@ -30,6 +36,11 @@ class MobileMenu {
     console.log('Close menu')
     this.overlayElement.classList.add(this.overlayOpenedClass)
     this.buttonElement.classList.add(this.buttonRotatedClass)
+
+    if (this.topWhenOpened) {
+      window.scrollTo(0, 0)
+    }
+
     this.opened = true
   }
 
@@ -60,7 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const menu = new MobileMenu({
     overlay: mobileMenuOverlayElement,
-    button: mobileMenuButtonElement
+    button: mobileMenuButtonElement,
+    topWhenOpened: true
   })
 
 })
