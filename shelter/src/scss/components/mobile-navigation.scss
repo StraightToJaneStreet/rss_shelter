@@ -34,7 +34,7 @@
     transition: visibility 0.75s;
 
     height: 100vh;
-    z-index: 1;
+    z-index: 5;
     background-color: red;
 
     background: rgba(41, 41, 41, 0.6);
@@ -118,7 +118,9 @@
     }
 
     &--light {
-        background-color: $color-primary-light;
+        #{$parent}__content {
+            background-color: $color-primary-light;
+        }
         #{$parent}__link {
             color: $color-dark-l;
             &:hover {
