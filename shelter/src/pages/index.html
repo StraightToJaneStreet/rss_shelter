@@ -9,19 +9,20 @@
 <body>
 
     <nav class="mobnav-overlay" id="mobnav-overlay">
-        <div class="mobnav-overlay__top">
-            <a class="mobnav-overlay__logo logo" href=".">
-                <h2 class="logo__title">Cozy House</h2>
-                <p class="logo__subtitle">Shelter for pets in Boston</p>
-            </a>
-            <button class="mobnav-overlay__button mobnav-btn mobnav-btn--rotated" id="mobnav-btn-close"><img src="./assets/icons/menu-burger.svg" alt="open menu icon"></button>
+        <div class="mobnav-overlay__content">
+            <div class="mobnav-overlay__top">
+                <a class="mobnav-overlay__logo logo" href=".">
+                    <h2 class="logo__title">Cozy House</h2>
+                    <p class="logo__subtitle">Shelter for pets in Boston</p>
+                </a>
+            </div>
+            <ul class="mobnav-overlay__list">
+                <li class="mobnav-overlay__item"><a class="mobnav-overlay__link" href="#" >About the shelter</a></li>
+                <li class="mobnav-overlay__item mobnav-overlay__item--current"><a class="mobnav-overlay__link" href="our-pets">Our pets</a></li>
+                <li class="mobnav-overlay__item"><a class="mobnav-overlay__link" href="#help-shelter">Help the shelter</a></li>
+                <li class="mobnav-overlay__item"><a class="mobnav-overlay__link" href="#contacts">Contacts</a></li>
+            </ul>
         </div>
-        <ul class="mobnav-overlay__list">
-            <li class="mobnav-overlay__item"><a class="mobnav-overlay__link" href="#" >About the shelter</a></li>
-            <li class="mobnav-overlay__item mobnav-overlay__item--current"><a class="mobnav-overlay__link" href="our-pets">Our pets</a></li>
-            <li class="mobnav-overlay__item"><a class="mobnav-overlay__link" href="#help-shelter">Help the shelter</a></li>
-            <li class="mobnav-overlay__item"><a class="mobnav-overlay__link" href="#contacts">Contacts</a></li>
-        </ul>
     </nav>
 
     <section class="cover">
@@ -31,7 +32,7 @@
                 <p class="logo__subtitle">Shelter for pets in Boston</p>
             </a>
             <div class="header__mobile-navigation">
-                <button class="mobnav-btn" id="mobnav-btn-open">
+                <button class="mobnav-btn" id="mobnav-btn">
                     <img src="./assets/icons/menu-burger.svg" alt="menu burger icon">
                 </button>
             </div>
