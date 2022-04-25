@@ -52,6 +52,18 @@
             margin-left: -100%;
         }
 
+        &--shift_left {
+            margin-left: -200%;
+        }
+
+        &--shift_right {
+            margin-left: 0;
+        }
+
+        &--transition {
+            transition: margin-left 1s;
+        }
+
     }
 
     &__item {
