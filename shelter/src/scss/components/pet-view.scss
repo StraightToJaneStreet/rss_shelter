@@ -1,0 +1,114 @@
+.pet-view {
+    max-width: 800px;
+    border-radius: 9px;
+    box-sizing: border-box;
+    background-color: white;
+
+    display: flex;
+    &__img {
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+        border-radius: 9px;
+
+        img {
+            display: block;
+            height: 100%;
+        }
+    }    
+
+    &__description {
+        padding: 50px 20px 50px 30px;
+    }
+
+    &__title {
+        @extend %typography-h3;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    &__subtitle {
+        @extend %typography-h4;
+        margin: 0;
+        padding-bottom: 40px;
+    }
+
+    &__text {
+        @extend %typography-h5;
+        margin: 0;
+        padding-bottom: 40px;
+    }
+
+    &__details {
+        margin: 0;
+        padding-left: 10px;
+    }
+    &__detail {
+        list-style-type: none;
+        position: relative;
+
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+
+        span {
+            font-weight: bold;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            left: -12px;
+            top: 50%;
+            transform: translate3d(0, -50%, 0);
+
+            display: block;
+            width: 4px;
+            height: 4px;
+
+            background-color: $color-primary;
+
+            border-radius: 100%;
+        }
+    }
+    @media screen and (max-width: $breakpoint-tablet) {
+        max-width: 630px;
+
+        &__description {
+            padding: 10px 10px 20px 10px;
+        }
+        &__subtitle {
+            padding-bottom: 20px;
+        }
+
+        &__text {
+            padding-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        &__img {
+            display: none;;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: justify;
+            font-size: 13px;
+            line-height: 110%;
+            letter-spacing: 0.06em;
+        }
+    }
+}
