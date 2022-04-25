@@ -3,10 +3,13 @@
     padding: 15px 0 0 0;
 
     &__grid {
-        display: grid;
+        display: none;
         grid-template-columns: repeat(4, 1fr);
         gap: 30px 40px;
         margin-bottom: 60px;
+        &--visible {
+            display: grid;
+        }
     }
 
     &__item {
