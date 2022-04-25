@@ -34,6 +34,7 @@ class MobileMenu {
   open() {
     this.overlayElement.classList.add(this.overlayOpenedClass)
     this.buttonElement.classList.add(this.buttonRotatedClass)
+    document.body.classList.add('body--no-scroll')
 
     if (this.topWhenOpened) {
       window.scrollTo(0, 0)
@@ -45,6 +46,7 @@ class MobileMenu {
   close() {
     this.overlayElement.classList.remove(this.overlayOpenedClass)
     this.buttonElement.classList.remove(this.buttonRotatedClass)
+    document.body.classList.remove('body--no-scroll')
     this.opened = false
   }
 

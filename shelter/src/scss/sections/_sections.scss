@@ -6,3 +6,7 @@
 @import "contacts";
 @import "topbar";
 @import "our-friends";
+
+.body--no-scroll {
+    overflow-y: hidden;
+}

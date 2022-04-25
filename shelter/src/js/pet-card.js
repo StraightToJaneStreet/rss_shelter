@@ -32,10 +32,12 @@ class PetCard {
 
   showPopup() {
     this.popup.classList.add('popup--visible')
+    document.body.classList.add('body--no-scroll')
   }
 
   closePopup() {
     this.popup.classList.remove('popup--visible')
+    document.body.classList.remove('body--no-scroll')
   }
 
   createPopup(params) {
