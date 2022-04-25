@@ -32,8 +32,8 @@ class Slider {
     const nextButtons = this.rootElement.querySelectorAll('.slider__nav-inner--right, .slider__nav-outer--right')
     const prevButtons = this.rootElement.querySelectorAll('.slider__nav-inner--left, .slider__nav-outer--left')
 
-    nextButtons.forEach(el => el.addEventListener('click', this.nextSlide.bind(this)))
-    prevButtons.forEach(el => el.addEventListener('click', this.prevSlide.bind(this)))
+    prevButtons.forEach(el => el.addEventListener('click', this.nextSlide.bind(this)))
+    nextButtons.forEach(el => el.addEventListener('click', this.prevSlide.bind(this)))
   }
 
 
@@ -56,15 +56,6 @@ class Slider {
 
       this.oldSlideCards.forEach(e => e.remove())
       this.slideMainElement.append(...this.currentSlideCards)
-
-      console.group('Transitionend')
-      console.log('Lock:', this.locked)
-      console.log('Current Cards:', this.currentSlideCards)
-      console.log('Old Slide Cards:', this.oldSlideCards)
-      console.log('Left Slide Element:', this.slideLeftElement)
-      console.log('Main Slide Element:', this.slideMainElement)
-      console.log('Right Slide Element:', this.slideRightElement)
-      console.groupEnd()
 
     }
 
