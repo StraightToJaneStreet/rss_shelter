@@ -21,8 +21,8 @@ class PetCard {
 
     const cardButton = document.createElement('button')
     cardButton.innerText = 'LearnMore'
-    cardButton.classList.add('button', 'pet-card__button--inverted')
-    
+    cardButton.classList.add('button', 'button--inverted', 'pet-card__button')
+
     cardButtonWrapper.append(cardButton)
 
     this.element.append(cardButtonWrapper)
