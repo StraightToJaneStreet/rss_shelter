@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const clientWidth = window.innerWidth
   if (clientWidth >= 1280) {
     const pages = []
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 6; i++) {
       let pageCards = [...PETS]
       pageCards = shuffle(pageCards).map(e => new PetCard(e)).map(e => e.getElement())
       pages.push(pageCards)
