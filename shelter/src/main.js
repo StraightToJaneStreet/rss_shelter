@@ -6,6 +6,16 @@ import { Slider } from './js/slider.js'
 import { Catalog } from './js/catalog.js'
 import { PETS } from './pets.js'
 
+function shuffle(collection) {
+  for (let j = 0; j < collection.length; j++) {
+    const pos = Math.floor(Math.random() * PETS.length)
+    let z = collection[j]
+    collection[j] = collection[pos]
+    collection[pos] = z
+  }
+  return collection
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
   const mobileMenuOverlayElement = document.getElementById('mobnav-overlay')
@@ -49,7 +59,7 @@ function wrapAsSliderItem(el) {
 document.addEventListener('DOMContentLoaded', () => {
 
   const sliderElement = document.getElementById('index-slider')
-  const petCards = PETS.map(pet => new PetCard(pet)).map(card => card.getElement())
+  const petCards = shuffle([...PETS]).map(pet => new PetCard(pet)).map(card => card.getElement())
 
   if (!sliderElement) { return }
 
@@ -62,15 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!catalogElement) { return }
 
-  function shuffle(collection) {
-    for (let j = 0; j < collection.length; j++) {
-      const pos = Math.floor(Math.random() * PETS.length)
-      let z = collection[j]
-      collection[j] = collection[pos]
-      collection[pos] = z
-    }
-    return collection
-  }
   const clientWidth = window.innerWidth
   if (clientWidth >= 1280) {
     const pages = []
