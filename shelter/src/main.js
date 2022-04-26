@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const catalogElement = document.getElementById('catalog')
 
-  if (!catalog) { return }
+  if (!catalogElement) { return }
 
   function shuffle(collection) {
     for (let j = 0; j < collection.length; j++) {
@@ -93,10 +93,10 @@ document.addEventListener('DOMContentLoaded', () => {
       storage = shuffle(storage)
       storage.sort((a, b) => b.length - a.length)
       const pageCards = storage.slice(0, 6).map(pet => pet.pop()).map(e => new PetCard(e)).map(e => e.getElement())
-      pages.push(pageCards, catalogElement)
+      pages.push(pageCards)
     }
 
-    const catalog = new Catalog(pages)
+    const catalog = new Catalog(pages, catalogElement)
 
   } else {
 
